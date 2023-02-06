@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lí chi tiêu</title>
+  <link rel="stylesheet" href="quanlichitieu.css">
+</head>
+<body>
+<h1>Expense Manager</h1>
+<form id="expense-form">
+  <label for="total-amount">Total Amount:</label>
+  <input type="text" id="total-amount" disabled value="0">
+  <div class="form-group">
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" required>
+    </div>
+    <div class="form-group">
+      <label for="type">Type:</label>
+      <select id="type">
+        <option value="Thu">Thu</option>
+        <option value="Chi">Chi</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="Ăn sáng">Ăn sáng</option>
+        <option value="Ăn trưa">Ăn trưa</option>
+        <option value="Ăn tối">Ăn tối</option>
+        <option value="Lương">Lương</option>
+        <option value="Lãi ngân hàng">Lãi ngân hàng</option>
+        <option value="Tiền xăng">Tiền xăng</option>
+        <option value="Khác">Khác</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="note">Note:</label>
+      <input type="text" id="note">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  <h2>Expense Report</h2>
+  <table id="expense-report">
+    <thead>
+    <tr>
+      <th>Amount</th>
+      <th>Type</th>
+      <th>Category</th>
+      <th>Note</th>
+      <th>Date</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+<script src="quanlichitieu.js"></script>
+</body>
+</html>
